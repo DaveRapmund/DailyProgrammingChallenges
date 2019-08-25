@@ -1,0 +1,116 @@
+.card-system{
+  @include breakPoint($break-lg){
+    min-height: 400px;
+  }
+  max-height: 455px;
+  position: relative;
+  height: 60%;
+  width: 100%;
+  perspective: 1000px;
+
+  & #card-1{
+    left: 5%;
+    margin: 0;
+
+    & .back{
+        background-image: url(../img/card-1.svg);
+    }
+  }
+
+  & #card-2{
+    left: 3%;
+    @include breakPoint($break-xl){
+      left: 0%;
+    }
+
+    & .back{
+      background-image: url(../img/card-2.svg);
+    }
+  }
+
+  & #card-3{
+    right: -65%;
+
+    & .back{
+        background-image: url(../img/card-3.svg);
+    }
+  }
+
+  & .challenge-card{
+    @include center('absolute');
+    display: inline-block;
+    width: 25%;
+    min-width: 300px;
+    height: 100%;
+    transform: rotateX(60deg) scale(0.7);
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.4);
+    transition: .5s all ease, 0s left linear;
+    perspective: 1000px;
+    cursor: pointer;
+
+    &:hover{
+      transform: rotateX(0deg) scale(0.9);
+      box-shadow: none;
+    }
+
+    & h1{
+      font-size: 250px;
+      line-height: 100%;
+    }
+
+    & .inner-card{
+      position: relative;
+      border: 10px solid white;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      text-align: center;
+      transform-style: preserve-3d;
+      backface-visibility: visible;
+
+      & .front{
+        background-image: url(../img/card-front.svg);
+        background-position: center center;
+        background-size: 100%;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        backface-visibility: hidden;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+      }
+
+      & .back{
+        background-position: center center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transform: rotateY(180deg);
+
+        & h3{
+          @include center('absolute');
+          top: 50%;
+          padding: 0px 5px;
+        }
+
+        & h2{
+          text-decoration: underline;
+        }
+      }
+
+      & .input-container{
+        @include center('absolute');
+        bottom: 50px;
+      }
+    }
+  }
+}
+
+// Prefix voor bug met backface-visibility in FireFox
+@-moz-document url-prefix() {
+  .back {
+    backface-visibility: hidden;
+  }
+}

@@ -1,0 +1,49 @@
+.content{
+  height: 80%;
+  position: relative;
+  top: 10%;
+
+  & h1{
+    text-align: center;
+    color: white;
+    @include transBlack('shadow', 0.4, 2px, 2px, 2px);
+    margin-bottom: 30px;
+    @include breakPoint($break-md, $break-height-2, 'max-max'){
+        font-size: 32px;
+        margin-bottom: 0px;
+    }
+    @include breakPoint($break-lg){
+      text-align: left;
+      margin-bottom: 0px;
+    }
+  }
+
+  & .date{
+    background-color: $date-color;
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    @include breakPoint($break-md, $break-height-2, 'max-max'){
+        background-color: transparent;
+        margin-bottom: 0px;
+    }
+
+    @include breakPoint($break-lg){
+      background-color: transparent;
+      text-align: left;
+      margin-left: 5px;
+      @include transBlack('shadow', 0.4, 1px, 2px, 2px);
+    }
+
+    & .completed-text{
+      @include breakPoint(550px, 1000px, 'max-max'){
+        display: none;
+      }
+    }
+  }
+}

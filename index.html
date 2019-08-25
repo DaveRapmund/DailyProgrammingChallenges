@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Daily Programming Challenges</title>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="content">
+            <h1>Daily Programming Challenges</h1>
+            <div class="date"></div>
+            <ul class="nav nav-tabs d-lg-none">
+                <li class="challenge_1"><a class="active show" data-toggle="tab" href="#challenge_1">Challenge 1</a></li>
+                <li class="challenge_2"><a data-toggle="tab" href="#challenge_2">Challenge 2</a></li>
+                <li class="challenge_3"><a data-toggle="tab" href="#challenge_3">Challenge 3</a></li>
+              </ul>
+            <div class="tab-content d-lg-none">
+              <div id="challenge_1" class="tab-pane active">
+                <h3 class="c1_h3">Write 17 for loops using Javascript</h3>
+                <input type="checkbox" onClick="onChecked(this)" name="completed" value="challenge_1">
+                <label for="completed">COMPLETED</label>
+              </div>
+              <div id="challenge_2" class="tab-pane fade">
+                  <h3 class="c2_h3">Read the React summary</h3>
+                  <input type="checkbox" name="completed" onClick="onChecked(this)" value="challenge_2">
+                  <label for="completed">COMPLETED</label>
+                </div>
+              <div id="challenge_3" class="tab-pane fade">
+                  <h3 class="c3_h3">Write 3 HTML markups</h3>
+                  <input type="checkbox" name="completed" onClick="onChecked(this)" value="challenge_3">
+                  <label for="completed">COMPLETED</label>
+                </div>
+            </div>
+            <div class="card-system d-none d-lg-block">
+              <div class="challenge-card" id="card-1" onClick="flipCard(this)">
+                <div class="inner-card">
+                  <div class="front">
+                    <h2 class="text-center mt-5">Challenge 1</h2>
+                    <h1 class="text-center">?</h1>
+                  </div>
+                  <div class="back">
+                    <h2 class="text-center mt-3">Challenge 1</h2>
+                    <h3 class="c1_h3">Write 17 for loops using Javascript</h3>
+                    <div class="input-container">
+                      <input type="checkbox" onClick="onChecked(this)" name="completed" value="c1_h3">
+                      <label for="completed">COMPLETED</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="challenge-card" id="card-2" onClick="flipCard(this)">
+                <div class="inner-card">
+                  <div class="front">
+                    <h2 class="text-center mt-5">Challenge 2</h2>
+                    <h1 class="text-center">?</h1>
+                  </div>
+                  <div class="back">
+                    <h2 class="text-center mt-3">Challenge 2</h2>
+                    <h3 class="c2_h3">Read the React summary</h3>
+                    <div class="input-container">
+                      <input type="checkbox" onClick="onChecked(this)" name="completed" value="c2_h3">
+                      <label for="completed">COMPLETED</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="challenge-card" id="card-3" onClick="flipCard(this)">
+                <div class="inner-card">
+                  <div class="front">
+                    <h2 class="text-center mt-5">Challenge 3</h2>
+                    <h1 class="text-center">?</h1>
+                  </div>
+                  <div class="back">
+                    <h2 class="text-center mt-3">Challenge 3</h2>
+                    <h3 class="c3_h3">Write 3 HTML markups</h3>
+                    <div class="input-container">
+                      <input type="checkbox" onClick="onChecked(this)" name="completed" value="c3_h3">
+                      <label for="completed">COMPLETED</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- card System -->
+          </div> <!-- content -->
+        </div> <!-- col -->
+      </div> <!-- row -->
+    </div> <!-- Container -->
+    <script src="./js/jquery-3.4.1.slim.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/data.js"></script>
+  </body>
+</html>

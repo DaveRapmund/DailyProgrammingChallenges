@@ -1,0 +1,30 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_cardsystem.scss";
+@import "_tabs.scss";
+@import "_heading.scss";
+
+html, body{
+  transition: opacity 1000ms ease-in;
+  margin: 0;
+  padding: 0;
+  background-image: $bg-gradient;
+  background-color: $bg-color;
+  color: white;
+  @include breakPoint($break-lg){
+    min-height: 600px;
+  }
+  min-height: 120vh;
+}
+
+body{
+  opacity: 0;
+}
+
+.row{
+  min-height: 100vh;
+}
+
+.col{
+  padding: 0;
+}

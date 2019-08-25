@@ -1,0 +1,17 @@
+// Colors
+$bg-color: lightblue;
+$date-color: #DFAE65;
+$li-color: #D1D1D1;
+$tab-color: white;
+$bg-gradient: linear-gradient($bg-color,  $bg-color,  $bg-color, rgba(255,255,255,0.6));
+
+// Breakpoints width
+$break-sm: 576px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1200px;
+
+// Breakpoints height
+$break-height-0: 320px;
+$break-height-1: 400px;
+$break-height-2: 500px;

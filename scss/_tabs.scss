@@ -1,0 +1,39 @@
+.nav-tabs{
+  background-color: $bg-color;
+  border: none;
+
+  & li{
+    width: 33.333%;
+    text-align: center;
+    background-color: $li-color;
+
+    & a{
+      @include transBlack('color', 0.7);
+      font-weight: bold;
+    }
+
+    & .active{
+      background-color: $tab-color;
+      display: block;
+    }
+  }
+}
+
+.tab-content{
+  height: 50%;
+  min-height: 220px;
+  background-color: $tab-color;
+  @include transBlack('color', 0.7);
+
+  & .tab-pane{
+    text-align: center;
+    top: 40%;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 578px){
+    .tab-content h3{
+      font-size: 22px;
+    }
+}

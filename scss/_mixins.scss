@@ -1,0 +1,43 @@
+
+// Use Media Query with min-width and min-height or max-width and max-height
+@mixin breakPoint($width: 0px, $height: 0px, $min-max: 'min-min'){
+  @if($min-max == 'min-min'){
+    @media screen and (min-width: $width){
+      @media screen and (min-height: $height){
+        @content;
+      }
+    }
+  }
+  @else if($min-max == 'max-max'){
+    @media screen and (max-width: $width){
+      @media screen and (max-height: $height){
+        @content;
+      }
+    }
+  }
+}
+
+// Define rgba-color or text-shadow with rgba value
+@mixin transBlack($type, $percentage, $hor: 0px, $vert: 0px, $blur: 0px){
+  @if($type == "shadow"){
+      text-shadow: $hor $vert $blur rgba(0,0,0, $percentage);
+  }
+  @else if($type == 'color'){
+    color: rgba(0,0,0, $percentage);
+  }
+}
+
+
+// Position an element in the center, both relative and absolute
+@mixin center($position){
+  @if($position == 'relative'){
+    position: relative;
+    margin: 0 auto;
+  }
+  @else if($position == 'absolute'){
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+}
