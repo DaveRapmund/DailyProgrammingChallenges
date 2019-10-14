@@ -1,12 +1,12 @@
 const quantity = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 const challenges = [
+  //SUMMARIES
   "Read the Javascript summary",
   "Read the CSS3 summary",
   "Read the AGILE & SCRUM summary",
   "Read the AJAX summary",
   "Read the ATOM summary",
   "Read the Bootstrap summary",
-  "Read the Commandline & CMDER summary",
   "Read the ES6 summary",
   "Read the GIT & GITHUB summary",
   "Read the GULP summary",
@@ -19,30 +19,34 @@ const challenges = [
   "Read the Regex summary",
   "Read the SCSS summary",
   "Read the Webpack summary",
+  "Read the React-Transition-Group summary",
 
+  //HTML5
   "Write ~ HTML markup(s)",
   "Write out all HTML5 tags ~ time(s)",
   "Load ~ Javascript file(s) into an HTML page",
 
+  //AGILE/SCRUM
   "Write out the Agile Manifesto ~ time(s)",
   "Write out the Agile Principles ~ time(s)",
   "Write out the User Story template ~ time(s)",
   "Write out ~ Product Vision(s) with Themes and Features",
 
+  //AJAX
   "Write out ~ XMLHTTP Request(s)",
+  "Write out ~ ActiveXObject request(s)",
+  "Write out the cross-browser AJAX requests ~ time(s)",
+  "Write down all readyState property values ~ time(s)",
 
+  //BOOTSTRAP
   "Write the needed files for Bootstrap down ~ time(s)",
   "Write out all Bootstrap breakpoints ~ time(s)",
   "Write down all Bootstrap color classes ~ time(s)",
   "Write out a standard Bootstrap grid ~ time(s)",
-  "Make ~ navigation(s) using Bootstrap",
-  "Make ~ navbar(s) using Bootstrap",
-  "Make ~ navbar(s) with a dropdown using Bootstrap",
   "Make ~ collapsable navbar(s) using Bootstrap",
   "Make ~ Breadcrumb(s) using Bootstrap",
   "Make ~ Jumbotron(s) using Bootstrap",
   "Make ~ Card Element(s) using Bootstrap",
-  "Make ~ Tooltip(s) using Bootstrap",
   "Make ~ Dropdown(s) using Bootstrap",
   "Make ~ Collapse(s) using Bootstrap",
   "Make ~ Accordion(s) using Bootstrap",
@@ -50,33 +54,52 @@ const challenges = [
   "Make ~ Carousel(s) using Bootstrap",
   "Make ~ Tabsystem(s) using Bootstrap",
 
+  //CSS3
   "Make ~ full-window-height page(s) using CSS3",
   "Write out ~ Transition(s) with CSS3",
   "Write out ~ Animation(s) with CSS3",
   "Write all CSS3 Selectors down ~ time(s)",
   "Make ~ Gradient Backgrounds with CSS3",
   "Create a CSS grid ~ time(s)",
+  "Use Flexbox ~ time(s)",
 
+  //ES6
   "Write out ~ ES6 Template String(s)",
   "Write out ~ ES6 Set(s)",
   "Write out ~ ES6 Map(s)",
-  "Write out ~ ES6 For-Of loop(s)",
   "Write out ~ ES6 Arrow Function(s)",
   "Write out ~ ES6 Ternary Operator(s)",
   "Write out ~ ES6 Class(es)",
 
-  "Write out the GIT CMDER commands ~ time(s)",
+  //GIT
+  "Write out the GIT config commands ~ time(s)",
   "Write down the steps to making a GIT REPO ~ time(s)",
   "Write down the GITHUB workflow ~ time(s)",
+  "Create ~ .gitignore file(s)",
+  "Create ~ repo(s) (existing and new)",
+  "Use git log with flags ~ time(s)",
+  "Work with git remote ~ time(s)",
+  "Use git tag ~ time(s)",
+  "Write down how git HEAD and DETACHED HEAD work",
+  "Use the git branch commands ~ time(s)",
+  "Use the git reset commands ~ time(s)",
+  "Write down how to fix a merge conflict",
+  "Explain git tracking branches",
+  "Write out all git commands",
+  "Work with GIT with 2 GitHub accounts",
 
+  //GULP
   "Write down the packages you need for GULP ~ time(s)",
   "Write out ~ GULP Task(s)",
   "Write out ~ GULP Watch(es)",
   "Write out a gulpfile.js ~ time(s)",
   "Add SCSS to a GULP project ~ time(s)",
   "Add Babel to a GULP project ~ time(s)",
+  "Write out a GULP project", 
 
+  //JAVASCRIPT
   "Write out ~ Date(s) in Javascript",
+  "Use the setDate method",
   "Reverse an array in place ~ time(s)",
   "Write out all Array Methods ~ time(s) in Javascript",
   "Write ~ For loop(s) using Javascript",
@@ -96,12 +119,82 @@ const challenges = [
   "Use the Filter method ~ time(s)",
   "Use the Spread Operator ~ time(s)",
   "Use SetTimeout ~ time(s)",
+  "Write out all string methods ~ time(s)",
+  "Explain what lexical scope is",
+  "Make ~ JavaScript class(es)",
+  "Write out ~ getter(s) and setter(s)",
+  "Work with JavaScript cookies ~ time(s)",
+  "Make a responsive navbar with JavaScript only",
+  "Reverse a string in place using JavaScript ~ time(s)",
+  "Write a recursion function in JavaScript ~ time(s)",
+  "Capitalize all first words in a string ~ time(s)",
+  "Check if a string is a palindrome ~ time(s)",
+  "Use the concat() array method ~ time(s)",
+  "Use the copyWithin() array method ~ time(s)",  
+  "Use the entries() array method ~ time(s)",  
+  "Use the every() array method ~ time(s)",
+  "Use the fill() array method ~ time(s)",
+  "Use the filter() array method ~ time(s)",
+  "Use the find() array method ~ time(s)",
+  "Use the findIndex() array method ~ time(s)",
+  "Use the forEach() array method ~ time(s)",
+  "Use the from() array method ~ time(s)",
+  "Use the includes() array method ~ time(s)",
+  "Use the indexOf() array method ~ time(s)",
+  "Use the isArray() array method ~ time(s)",
+  "Use the join() array method ~ time(s)",
+  "Use the keys() array method ~ time(s)",
+  "Use the lastIndexOf() array method ~ time(s)",
+  "Use the map() array method ~ time(s)",
+  "Use the pop() array method ~ time(s)",
+  "Use the push() array method ~ time(s)",
+  "Use the reduce() array method ~ time(s)",
+  "Use the reduceRight() array method ~ time(s)",
+  "Use the reverse() array method ~ time(s)",
+  "Use the shift() array method ~ time(s)",  
+  "Use the slice() array method ~ time(s)",
+  "Use the some() array method ~ time(s)",
+  "Use the sort() array method ~ time(s)",
+  "Use the splice() array method ~ time(s)",
+  "Use the toString() array method ~ time(s)",
+  "Use the unshift() array method ~ time(s)",
+  "Use the values() array method ~ time(s)",
+  "Use the charAt() string method ~ time(s)",
+  "Use the charCodeAt() string method ~ time(s)",
+  "Use the concat() string method ~ time(s)",
+  "Use the endsWith() string method ~ time(s)",
+  "Use the fromCharCode() string method ~ time(s)",
+  "Use the includes() string method ~ time(s)",
+  "Use the indexOf() string method ~ time(s)",
+  "Use the lastIndexOf() string method ~ time(s)",
+  "Use the match() string method ~ time(s)",
+  "Use the repeat() string method ~ time(s)",
+  "Use the replace() string method ~ time(s)",
+  "Use the search() string method ~ time(s)",
+  "Use the slice() string method ~ time(s)",
+  "Use the split() string method ~ time(s)",
+  "Use the startsWith() string method ~ time(s)",
+  "Use the substr() string method ~ time(s)",
+  "Use the substring() string method ~ time(s)",
+  "Use the toLowerCase() string method ~ time(s)",
+  "Use the toUpperCase() string method ~ time(s)",
+  "Use the toString() string method ~ time(s)",
+  "Use the trim() string method ~ time(s)",
+  "Use the valueOf() string method ~ time(s)",  
+  "Use the for-of loop ~ time(s)",
+  "Create a JavaScript dropdown",
+  "Create a responsive JavaScript navigation",
+  "Write out ~ for-in loop(s)",
+  "Create a horizontally scolling navigation",
+  "Make a FizzBuzz application", 
+  "Create an automatic fade slider with JavaScript",
+  "Create a slider with JavaScript",
+  
+  //JQUERY
+  "Write down all CSS/jQuery Filters ~ time(s)",
+  "Write ~ AJAX request(s) using jQuery",
 
-  "Write down all CSS/JQuery Filters ~ time(s)",
-  "Write ~ AJAX request(s) using JQuery",
-
-  "Write down the AJAX Request lifecycle ~ time(s)",
-
+  //REDUX
   "Write out ~ Redux Action Creator(s)",
   "Write out ~ Redux Reducer(s)",
   "Create ~ Redux Store(s)",
@@ -121,10 +214,15 @@ const challenges = [
   "Write out ~ Conditional Return(s)",
   "Use Thunk ~ time(s) for an async Action Creator",
 
+  //REACT ROUTER
   "Add React Router to a component ~ time(s)",
   "Make a React Router Prompt ~ time(s)",
   "Add props to a React Router component ~ time(s)",
-
+  "Make a React Router 404 redirect ~ time(s)",
+  "Make a dynamic React Router link",
+  "Use React Router Redirect ~ time(s)",
+  
+  //REACT
   "Pass down props to a component ~ time(s)",
   "Write out ~ Functional Component(s)",
   "Write out ~ Class Based Component(s)",
@@ -137,26 +235,32 @@ const challenges = [
   "Use the fetch API with Promise.all ~ time(s)",
   "Call a method from a PARENT component ~ times(s)",
 
+  //AXIOS
   "Create an Axios Custom Client ~ time(s)",
 
+  //REGEX
   "Write out ~ Regular Expression(s)",
 
+  //SCSS
   "Make ~ SCSS variable(s)",
   "Create ~ SCSS Mixin(s)",
   "Use extend with an invisible class ~ time(s)",
-  "Write out all different methods to use comments ~ time(s)",
   "Use @each with SCSS ~ time(s)",
   "Create ~ SCSS map(s) and loop through them",
-
-  "Draw something with SVG",
-
+  "Use the SCSS nth method ~ time(s)",
+  "Use the SCSS index method ~ time(s)",
+  "Use #{} in SCSS ~ time(s)",
+  
+  //WEBPACK
   "Make a new package.json file ~ time(s)",
   "Create ~ webpack.config.js file(s) for a React Project",
-  "Add SASS with Webpack ~ time(s)",
+  "Add SCSS with Webpack ~ time(s)",
   "Add Bootstrap with Webpack ~ time(s)",
-
-  "Complete ~ wordlists on the Tickomatic App",
-  "Use Flexbox ~ time(s)"
+  "Create a Webpack practice project",
+  
+  //REACT-TRANSITION-GROUP
+  "Make a CSSTransition ~ time(s)",
+  "Trigger a CSSTransition on the state changing",
 ];
 
 let randomQuantity, randomChallenge, fullRandomChallenge;
